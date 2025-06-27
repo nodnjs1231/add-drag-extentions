@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Add Drag</title>
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <div class="header-content">
+                    <h1>🔢 Add Drag</h1>
+                    <button id="resetBtn" class="reset-btn">🔄</button>
+                </div>
+                <p>Sum of numbers from selected text</p>
+            </div>
+
+            <!-- Total Display -->
+            <div class="total-section">
+                <div class="total-label">Total</div>
+                <div class="total-value" id="totalSum">0</div>
+            </div>
+
+            <!-- Last Selected Text -->
+            <div class="last-selection" id="lastSelection">Drag to select text with numbers!</div>
+
+            <!-- Recently Extracted Numbers -->
+            <div class="recent-numbers">
+                <h3>Recent Numbers</h3>
+                <div class="numbers-list" id="numbersList">
+                    <div class="no-data">No numbers extracted yet</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="instructions">
+                <h4>📋 How to Use</h4>
+                <ol>
+                    <li>Drag to select text containing numbers on any webpage</li>
+                    <li>Numbers will be automatically added to the total</li>
+                    <li>Use the reset button to clear all data</li>
+                </ol>
+            </div>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
